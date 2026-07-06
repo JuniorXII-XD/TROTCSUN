@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
-   NEXUS CLUB — Interactive Features & Animations
+   TROTCS UN CLUB — Interactive Features & Animations
    ═══════════════════════════════════════════════════════════ */
 
 document.addEventListener('DOMContentLoaded', () => {
