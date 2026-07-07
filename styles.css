@@ -6,11 +6,14 @@
 /* ─── CSS Custom Properties ─── */
 :root {
     /* Colors */
-    --accent:        #7c3aed;
-    --accent-light:  #a78bfa;
-    --accent-dark:   #5b21b6;
-    --accent-glow:   rgba(124, 58, 237, 0.35);
-    --accent-subtle: rgba(124, 58, 237, 0.08);
+    --accent:        #16a34a;
+    --accent-light:  #4ade80;
+    --accent-dark:   #14532d;
+    --accent-glow:   rgba(34, 197, 94, 0.35);
+    --accent-subtle: rgba(34, 197, 94, 0.08);
+
+    --accent-blue:   #38bdf8;
+    --accent-yellow: #facc15;
 
     --bg-primary:    #050505;
     --bg-secondary:  #0a0a0a;
@@ -26,7 +29,7 @@
 
     --border:        rgba(255, 255, 255, 0.06);
     --border-hover:  rgba(255, 255, 255, 0.12);
-    --border-accent: rgba(124, 58, 237, 0.3);
+    --border-accent: rgba(34, 197, 94, 0.3);
 
     --glass-bg:      rgba(10, 10, 10, 0.7);
     --glass-border:  rgba(255, 255, 255, 0.08);
@@ -182,7 +185,7 @@ button {
 }
 
 .accent-text {
-    background: linear-gradient(135deg, var(--accent-light), var(--accent));
+    background: linear-gradient(135deg, var(--accent-light), var(--accent-blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -493,15 +496,18 @@ button {
     align-items: center;
     position: relative;
     overflow: hidden;
-    background: var(--bg-primary);
+    background:
+        linear-gradient(to bottom, rgba(5,5,5,0.55), rgba(5,5,5,0.85) 70%, var(--bg-primary) 100%),
+        linear-gradient(90deg, rgba(5,5,5,0.9) 0%, rgba(5,5,5,0.55) 45%, rgba(5,5,5,0.25) 100%),
+        url('assets/hero_artwork.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding-top: var(--nav-height);
 }
 
 .hero-bg-shapes {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    overflow: hidden;
+    display: none;
 }
 
 .shape {
@@ -569,7 +575,7 @@ button {
     margin: 0 auto;
     padding: 0 var(--space-xl);
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 1fr;
     align-items: center;
     gap: var(--space-3xl);
     min-height: calc(100vh - var(--nav-height));
@@ -579,6 +585,7 @@ button {
 
 .hero-content {
     padding-right: var(--space-xl);
+    max-width: 640px;
 }
 
 .hero-label {
@@ -650,6 +657,7 @@ button {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: -0.02em;
+    color: var(--accent-yellow);
 }
 
 .stat-label {
@@ -666,13 +674,9 @@ button {
     background: var(--border);
 }
 
-/* Hero Visual */
+/* Hero Visual — replaced by full-bleed background image, kept in DOM but hidden */
 .hero-visual {
-    position: relative;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none;
 }
 
 .hero-image-wrapper {
@@ -858,7 +862,7 @@ button {
     font-family: var(--font-heading);
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--accent-light);
+    color: var(--accent-blue);
     line-height: 1;
 }
 
@@ -1911,10 +1915,6 @@ button {
 
 /* Large Tablets & Small Desktops */
 @media (max-width: 1200px) {
-    .hero-container {
-        grid-template-columns: 45% 55%;
-    }
-
     .committee-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1940,9 +1940,19 @@ button {
         padding-top: var(--space-3xl);
     }
 
+    .hero {
+        background:
+            linear-gradient(to bottom, rgba(5,5,5,0.65), rgba(5,5,5,0.9) 70%, var(--bg-primary) 100%),
+            linear-gradient(rgba(5,5,5,0.55), rgba(5,5,5,0.55)),
+            url('assets/hero_artwork.png');
+        background-size: cover;
+        background-position: center;
+    }
+
     .hero-content {
         padding-right: 0;
         order: 1;
+        max-width: 100%;
     }
 
     .hero-visual {
