@@ -577,6 +577,7 @@ button {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
+    text-align: center;
     gap: var(--space-3xl);
     min-height: calc(100vh - var(--nav-height));
     position: relative;
@@ -584,8 +585,8 @@ button {
 }
 
 .hero-content {
-    padding-right: var(--space-xl);
-    max-width: 640px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .hero-label {
@@ -599,7 +600,7 @@ button {
     font-size: 0.8rem;
     font-weight: 500;
     color: var(--accent-light);
-    margin-bottom: var(--space-2xl);
+    margin: 0 auto var(--space-2xl);
     letter-spacing: 0.02em;
 }
 
@@ -629,12 +630,13 @@ button {
     font-size: 1.1rem;
     color: var(--text-secondary);
     line-height: 1.8;
-    margin-bottom: var(--space-2xl);
-    max-width: 480px;
+    margin: 0 auto var(--space-2xl);
+    max-width: 600px;
 }
 
 .hero-buttons {
     display: flex;
+    justify-content: center;
     gap: var(--space-md);
     margin-bottom: var(--space-3xl);
     flex-wrap: wrap;
@@ -643,6 +645,7 @@ button {
 .hero-stats {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: var(--space-xl);
 }
 
