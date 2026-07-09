@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="TROTCS UN Club — A premier high school innovation and technology club. Join us to explore, create, and lead the future.">
-    <title>TROTCS UN — Innovation Club</title>
+    <title>Gallery | TROTCS UN</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -22,10 +22,10 @@
             </a>
 
             <div class="nav-links" id="navLinks">
-                <a href="index.html" class="nav-link active">Home</a>
+                <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="activities.html" class="nav-link">Activities</a>
-                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="gallery.html" class="nav-link active">Gallery</a>
                 <a href="news.html" class="nav-link">News</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
@@ -75,101 +75,66 @@
     <!-- ═══════════════════════════════════════════════ -->
     <!-- HERO SECTION                                    -->
     <!-- ═══════════════════════════════════════════════ -->
-    <section id="home" class="hero">
-        <div class="hero-bg-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-            <div class="shape shape-4"></div>
-            <div class="shape shape-5"></div>
-        </div>
-
-        <div class="hero-container">
-            <div class="hero-content" data-animate="fade-right">   
-                <h1 class="hero-title">
-                    น้ำหนึ่ง <span class="accent-text">ใจเดียว</span><br>
-                    กลมเกลียว <span class="accent-text">สามัคคี</span>
-                </h1>
-                <p class="hero-description">
-                    We are TROTCS UN — a collective of creators, innovators, and dreamers 
-                    pushing the boundaries of what a high school club can achieve.
-                </p>
-                <div class="hero-buttons">
-                    <a href="about.html" class="btn btn-primary">
-                        <span>Explore Our World</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                    <a href="activities.html" class="btn btn-secondary">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polygon points="5 3 19 12 5 21 5 3"/>
-                        </svg>
-                        <span>Watch Showreel</span>
-                    </a>
-                </div>
-
-            </div>
-
-
-        </div>
-
-        <div class="hero-scroll-indicator">
-            <div class="scroll-line"></div>
-            <span>Scroll to explore</span>
-        </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════════ -->
-    <!-- ABOUT SECTION                                   -->
-    <!-- ═══════════════════════════════════════════════ -->
-    <section id="join" class="section join-section">
-        <div class="join-bg">
-            <div class="join-shape join-shape-1"></div>
-            <div class="join-shape join-shape-2"></div>
-            <div class="join-shape join-shape-3"></div>
-            <div class="join-particles" id="joinParticles"></div>
-        </div>
+    <section id="gallery" class="section gallery">
         <div class="container">
-            <div class="join-content" data-animate="fade-up">
-                <div class="section-label center">
+            <div class="section-header" data-animate="fade-up">
+                <div class="section-label">
                     <span class="label-line"></span>
-                    <span>Join Us</span>
-                    <span class="label-line"></span>
+                    <span>Gallery</span>
                 </div>
-                <h2 class="join-title">Ready to Shape<br>the <span class="accent-text">Future</span>?</h2>
-                <p class="join-description">
-                    Whether you're a coder, designer, leader, or just curious — 
-                    there's a place for you at TROTCS UN. Join 150+ innovators and start 
-                    building something extraordinary.
-                </p>
-                <div class="join-buttons">
-                    <a href="#" class="btn btn-primary btn-large">
-                        <span>Apply to Join TROTCS UN</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        <span>Contact Us First</span>
-                    </a>
-                </div>
-                <div class="join-trust">
-                    <div class="trust-avatars">
-                        <div class="trust-avatar">AJ</div>
-                        <div class="trust-avatar">SK</div>
-                        <div class="trust-avatar">MC</div>
-                        <div class="trust-avatar">EP</div>
-                        <div class="trust-avatar">+146</div>
+                <h2 class="section-title">Captured <span class="accent-text">Moments</span></h2>
+                <p class="section-subtitle">A glimpse into the energy, creativity, and passion that drives TROTCS UN forward.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item tall" data-animate="fade-up" data-delay="0">
+                    <img src="assets/hero_artwork.png" alt="Gallery Image 1">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Innovation Summit</span>
+                        <h4>Annual Showcase 2025</h4>
                     </div>
-                    <span>Join 150+ members already making an impact</span>
+                </div>
+                <div class="gallery-item" data-animate="fade-up" data-delay="100">
+                    <img src="assets/activity_coding.png" alt="Gallery Image 2">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Hackathon</span>
+                        <h4>Code Sprint Weekend</h4>
+                    </div>
+                </div>
+                <div class="gallery-item" data-animate="fade-up" data-delay="200">
+                    <img src="assets/activity_design.png" alt="Gallery Image 3">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Workshop</span>
+                        <h4>Design Thinking Lab</h4>
+                    </div>
+                </div>
+                <div class="gallery-item wide" data-animate="fade-up" data-delay="100">
+                    <img src="assets/about_image.png" alt="Gallery Image 4">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Team</span>
+                        <h4>Collaboration Session</h4>
+                    </div>
+                </div>
+                <div class="gallery-item tall" data-animate="fade-up" data-delay="200">
+                    <img src="assets/activity_community.png" alt="Gallery Image 5">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Community</span>
+                        <h4>Outreach Program</h4>
+                    </div>
+                </div>
+                <div class="gallery-item" data-animate="fade-up" data-delay="0">
+                    <img src="assets/gallery_event.png" alt="Gallery Image 6">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Event</span>
+                        <h4>Tech Night Gala</h4>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ═══════════════════════════════════════════════ -->
-    <!-- FOOTER                                          -->
+    <!-- COMMITTEE SECTION                               -->
     <!-- ═══════════════════════════════════════════════ -->
     <footer id="contact" class="footer">
         <div class="container">
